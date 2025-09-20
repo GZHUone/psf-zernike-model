@@ -1,6 +1,8 @@
 # PSF Zernike Model
 
-This project develops a **PyTorch-based network architecture** — **PSF Zernike**, designed for image processing tasks. The model integrates various **image preprocessing techniques** with powerful **network architectures** to enhance **denoising** and **sharpening** of images.
+This project develops a PyTorch-based network architecture — PSF Zernike. In the image input phase, PSF extraction and cropping are performed first, followed by the application of three denoising filters: Gaussian filter, mean filter, and median filter, along with three sharpening enhancement algorithms: high-pass filter sharpening, Laplacian sharpening, and unsharp masking.
+
+Additionally, the network architecture combines multiple model configurations, including CNN + Transformer, ShuffleNet + Transformer, EfficientNet + Transformer, and MobileNet + Transformer, to enhance the network’s performance and image processing capabilities.
 
 ## Project Overview
 
