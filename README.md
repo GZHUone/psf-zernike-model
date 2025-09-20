@@ -1,40 +1,42 @@
 # PSF Zernike Model
 
-This project develops a PyTorch-based network architecture — PSF Zernike, designed for image processing tasks. The model combines various image preprocessing techniques and powerful network architectures to enhance denoising and sharpening of images.
+This project develops a **PyTorch-based network architecture** — **PSF Zernike**, designed for image processing tasks. The model integrates various **image preprocessing techniques** with powerful **network architectures** to enhance **denoising** and **sharpening** of images.
 
 ## Project Overview
 
-1. **PSF Extraction and Cropping**  
-   In the image input phase, the PSF (Point Spread Function) is extracted and cropped before further processing.
+### 1. PSF Extraction and Cropping
+In the image input phase, the **PSF (Point Spread Function)** is extracted and cropped to prepare for further processing.
 
-2. **Preprocessing Methods**  
-   The model applies three denoising filters:  
-   - **Gaussian Filter**: Blurs the image to reduce noise.  
-   - **Mean Filter**: Removes noise by replacing a pixel with the average of its neighboring pixels.  
-   - **Median Filter**: Uses the median of the neighboring pixels to replace the target pixel, effective for salt-and-pepper noise.
+### 2. Preprocessing Methods
+The model applies several denoising and enhancement filters:
 
-   The model also applies three sharpening enhancement algorithms:  
-   - **High-Pass Filter Sharpening**: Enhances image details by emphasizing high-frequency components.  
-   - **Laplacian Sharpening**: Uses the Laplacian operator to sharpen the image.  
-   - **Unsharp Masking**: Enhances contrast by subtracting a blurred version of the image from the original.
+#### **Denoising Filters**:
+- **Gaussian Denoising**: Applies a Gaussian blur to reduce noise in the image.
+- **Mean Denoising**: Replaces each pixel with the average of its neighboring pixels to remove noise.
+- **Median Denoising**: Replaces a pixel with the median of its neighboring pixels, especially useful for salt-and-pepper noise.
 
-   **Preprocessing Example**:  
-   ![Preprocessing Input Image](https://github.com/GZHUone/psf-zernike-model/blob/main/processs.png)
+#### **Sharpening Enhancement Algorithms**:
+- **High-Pass Filter Sharpening**: Emphasizes high-frequency components, enhancing image details.
+- **Laplacian Sharpening**: Uses the Laplacian operator to sharpen the image by detecting edges.
+- **Unsharp Masking**: Enhances contrast by subtracting a blurred version of the image from the original.
 
-3. **Core Network Architecture**  
-   The network architecture is based on the following combinations, leveraging the strengths of convolutional neural networks and Transformer models:
-   - **CNN + Transformer**: Combines traditional CNNs for local feature extraction with Transformers for capturing global dependencies.
-   - **ShuffleNet + Transformer**: ShuffleNet is a lightweight architecture that reduces computational complexity, while Transformer enhances global feature modeling.
-   - **EfficientNet + Transformer**: EfficientNet optimizes the network structure for high performance with low computational cost, and Transformer further enhances feature extraction.
-   - **MobileNet + Transformer**: MobileNet is an efficient architecture for resource-constrained environments, and Transformer boosts global feature modeling.
+**Preprocessing Example**:
+![Preprocessing Input Image](https://github.com/GZHUone/psf-zernike-model/blob/main/processs.png)
 
-4. **Network Architecture Diagram**  
-   The following diagram shows the overall structure of the PSF Zernike model, including connections between modules and data flow:  
-   ![Network Architecture](https://github.com/GZHUone/psf-zernike-model/blob/main/PSF%20Zernike.jpg)
+### 3. Core Network Architecture
+The network architecture leverages the strengths of **Convolutional Neural Networks (CNNs)** combined with **Transformer models**. Below are the main combinations used in the model:
+
+- **CNN + Transformer**: Traditional CNNs extract local features, while the Transformer captures global dependencies.
+- **ShuffleNet + Transformer**: A lightweight architecture that reduces computational complexity, paired with Transformer for enhanced global feature modeling.
+- **EfficientNet + Transformer**: Optimizes the network structure for high performance with minimal computational cost, further enhanced by Transformer.
+- **MobileNet + Transformer**: Designed for resource-constrained environments, MobileNet combined with Transformer boosts global feature modeling.
+
+### 4. Network Architecture Diagram
+The diagram below illustrates the overall structure of the **PSF Zernike** model, including connections between modules and the flow of data:
+![Network Architecture](https://github.com/GZHUone/psf-zernike-model/blob/main/PSF%20Zernike.jpg)
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/GZHUone/psf-zernike-model.git
-
