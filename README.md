@@ -2,9 +2,19 @@
 
 This project introduces a **PyTorch-based network architecture** — **PSF Zernike**, designed specifically for high-performance **image processing** tasks. The model integrates powerful **network architectures** with advanced **image preprocessing techniques** to enhance **denoising** and **sharpening** of images.
 
+## Project Structure
+
+The project contains the following files:
+
+- `psf_crop_denoise.py`: Script for cropping and denoising PSF images.
+- `psf_sharpen_.ipynb`: Jupyter notebook for sharpening PSF images.
+- `psf_zernike_model.py`: Script implementing the PSF Zernike model.
+- `README.md`: This README file.
+
+  
 ## Key Features
 
-### 1. Powerful Network Architectures
+### 1. Network Architectures
 
 The core of this model is built on a combination of **Convolutional Neural Networks (CNNs)** and **Transformers**, carefully selected to optimize both local and global feature extraction. The architecture includes the following key configurations:
 - **CNN + Transformer**: CNNs are used for efficient local feature extraction, while Transformers capture long-range dependencies across the entire image, improving overall context understanding.
@@ -32,4 +42,3 @@ To enhance image details and edges, the model employs the following sharpening t
 
 ---
 
-This model integrates advanced network architectures with sophisticated image preprocessing methods to create a robust framework for **denoising**, **sharpening**, and improving the overall quality of images. Its combination of Transformer-based models and traditional image processing techniques makes it highly effective for various image enhancement tasks.
