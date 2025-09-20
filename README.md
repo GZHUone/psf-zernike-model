@@ -1,41 +1,51 @@
 # PSF Zernike Model
 
-This project develops a PyTorch-based network architecture — PSF Zernike. In the image input phase, PSF extraction and cropping are performed first, followed by the application of three denoising filters: Gaussian filter, mean filter, and median filter, along with three sharpening enhancement algorithms: high-pass filter sharpening, Laplacian sharpening, and unsharp masking.
+Welcome to **PSF Zernike** — a **PyTorch-based network architecture** engineered to revolutionize **image processing**. This groundbreaking model seamlessly blends advanced **denoising** and **sharpening** techniques with **state-of-the-art deep learning architectures**, setting new standards for image quality enhancement.
 
-Additionally, the network architecture combines multiple model configurations, including CNN + Transformer, ShuffleNet + Transformer, EfficientNet + Transformer, and MobileNet + Transformer, to enhance the network’s performance and image processing capabilities.
+---
 
-## Project Overview
+### 🔥 **Key Innovations**
 
-### 1. PSF Extraction and Cropping
-In the image input phase, the **PSF (Point Spread Function)** is extracted and cropped to prepare for further processing.
+#### 1. **PSF Extraction & Precision Cropping**
+   The journey begins with **PSF (Point Spread Function)** extraction and precision cropping, ensuring that every pixel is primed for optimal enhancement. This crucial step lays the foundation for unparalleled image processing accuracy.
 
-### 2. Preprocessing Methods
-The model applies several denoising and enhancement filters:
+   ![PSF Extraction and Cropping](https://github.com/GZHUone/psf-zernike-model/blob/main/processs.png)
 
-#### **Denoising Filters**:
-- **Gaussian Denoising**: Applies a Gaussian blur to reduce noise in the image.
-- **Mean Denoising**: Replaces each pixel with the average of its neighboring pixels to remove noise.
-- **Median Denoising**: Replaces a pixel with the median of its neighboring pixels, especially useful for salt-and-pepper noise.
+#### 2. **Advanced Denoising Filters for Clean Perfection**
+   The model employs **three advanced denoising filters**, each designed to tackle noise with surgical precision:
+   - **Gaussian Denoising**: Smoothens images by strategically blurring noise while preserving vital image features.
+   - **Mean Denoising**: Removes noise by averaging neighboring pixels, leaving clean and smooth transitions.
+   - **Median Denoising**: Targets salt-and-pepper noise, replacing each pixel with the median of its neighbors, maintaining sharp edges.
 
-#### **Sharpening Enhancement Algorithms**:
-- **High-Pass Filter Sharpening**: Emphasizes high-frequency components, enhancing image details.
-- **Laplacian Sharpening**: Uses the Laplacian operator to sharpen the image by detecting edges.
-- **Unsharp Masking**: Enhances contrast by subtracting a blurred version of the image from the original.
+   **Preprocessing Example**:  
+   ![Denoising Filters](https://github.com/GZHUone/psf-zernike-model/blob/main/PSF%20Zernike.jpg)
 
-**Preprocessing Example**:
-![Preprocessing Input Image](https://github.com/GZHUone/psf-zernike-model/blob/main/processs.png)
+#### 3. **Unleashing Image Sharpness with Cutting-Edge Enhancement**
+   Elevating image quality is a science, and the model integrates three of the most powerful **sharpening algorithms** available:
+   - **High-Pass Filter Sharpening**: Highlights fine details by amplifying high-frequency components, giving clarity to every edge.
+   - **Laplacian Sharpening**: Boosts sharpness by focusing on high-contrast edges, ensuring precision where it's needed most.
+   - **Unsharp Masking**: Subtracts a blurred version of the image to boost contrast and fine details.
 
-### 3. Core Network Architecture
-The network architecture leverages the strengths of **Convolutional Neural Networks (CNNs)** combined with **Transformer models**. Below are the main combinations used in the model:
+#### 4. **Next-Generation Network Architecture for Unmatched Performance**
+   We’ve pushed the envelope by combining powerful **CNNs** with cutting-edge **Transformer models**. This results in a flexible, scalable architecture that can adapt to any image processing challenge:
+   - **CNN + Transformer**: A perfect fusion, where CNNs extract detailed local features while Transformers capture global dependencies, enabling deep understanding of the entire image.
+   - **ShuffleNet + Transformer**: A lightweight architecture that maintains computational efficiency while enhancing global feature modeling.
+   - **EfficientNet + Transformer**: Optimized for both speed and accuracy, this architecture guarantees high performance with minimal resource consumption, while Transformers provide the final edge in global feature learning.
+   - **MobileNet + Transformer**: Tailored for resource-constrained environments, this combination ensures rapid, high-quality processing even on edge devices.
 
-- **CNN + Transformer**: Traditional CNNs extract local features, while the Transformer captures global dependencies.
-- **ShuffleNet + Transformer**: A lightweight architecture that reduces computational complexity, paired with Transformer for enhanced global feature modeling.
-- **EfficientNet + Transformer**: Optimizes the network structure for high performance with minimal computational cost, further enhanced by Transformer.
-- **MobileNet + Transformer**: Designed for resource-constrained environments, MobileNet combined with Transformer boosts global feature modeling.
+   ![Network Architecture](https://github.com/GZHUone/psf-zernike-model/blob/main/PSF%20Zernike.jpg)
 
-### 4. Network Architecture Diagram
-The diagram below illustrates the overall structure of the **PSF Zernike** model, including connections between modules and the flow of data:
-![Network Architecture](https://github.com/GZHUone/psf-zernike-model/blob/main/PSF%20Zernike.jpg)
+---
+
+### 🚀 **Why PSF Zernike?**
+
+PSF Zernike doesn’t just enhance images; it **redefines** how we approach image processing. With precision at its core, this model isn’t just a tool, but a breakthrough in leveraging both traditional and modern techniques to extract the best possible image quality. Whether you're improving clarity, removing noise, or sharpening fine details, **PSF Zernike** offers a seamless, scalable solution.
+
+---
+
+By incorporating powerful architectures, advanced image processing techniques, and leveraging the latest in deep learning, **PSF Zernike** is engineered for **maximum performance** and **unprecedented image quality**. It’s time to elevate your image processing workflows to the next level.
+
+---
 
 ## Installation
 
